@@ -1,6 +1,6 @@
 - name: ping test
   hosts: 13.222.176.178
-  became: yes
+  become: yes
   tasks:
   - name: ping servers test
     ansible.builtin.ping:
