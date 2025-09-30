@@ -1,14 +1,14 @@
 - name :  nginx servers
-  hosts:  frontend
+  hosts:  all
   become: yes
   tasks:
     - name: install nginx 
       ansible.builtin.dnf:
           name: nginx
-          state: absent
+          state: present
     - name: Start service nginx, if not started
       ansible.builtin.service:
         name: nginx
-        state: stopped 
-        enabled: no
+        state: started 
+        enabled: yes
   
