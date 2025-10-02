@@ -1,0 +1,12 @@
+- name: task level vars
+  hosts: web
+  become: yes
+  vars:
+    course: ansible
+    duration: 120hrs
+    trainer: raju
+  taks:
+    vars:
+     - course: devops
+       ansible.builtin.debug:
+       msg: "course name is :{{ COURSE }}, Duration is: {{ duration }}, trainer is {{ trainer }}"
