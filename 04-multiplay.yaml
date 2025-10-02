@@ -7,8 +7,6 @@
     ansible.builtin.debug:
       msg: "Hello from PLAY-01 and TASK-01"
 
-
-
 - name: play2
   hosts: web
   become: yes
