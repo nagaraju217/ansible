@@ -6,6 +6,6 @@
     DURATION: 120hrs
     Trainer: raju
   tasks:
-    - name: vars 
-      ansible.builtin.debug:
+   - name: vars 
+     ansible.builtin.debug:
         msg:  "couse is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ raju }}"
