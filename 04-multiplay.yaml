@@ -1,21 +1,4 @@
 
-
-# - name: PLAY-01
-#   hosts: web
-#   tasks:
-#   - name: PLAY-01 and TASK-01
-#     ansible.builtin.debug:
-#       msg: "Hello from PLAY-01 and TASK-01"
-
-# - name: play2
-#   hosts: web
-#   become: yes
-#   tasks:
-#     - name: play2 task1
-#       ansible.builtin.debug:
-#       msg: "playbook2 task1"
-
-
 - name: PLAY-01
   hosts: web
   tasks:
