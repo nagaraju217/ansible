@@ -3,8 +3,9 @@
   become: yes
   tasks:
     - name: play1 task 1
-      ansible.builtin.dbug:
+      ansible.builtin.debug:
       msg:  "playbook1 task1"
+
 
 
 - name: play2
@@ -12,5 +13,5 @@
   become: yes
   tasks:
     - name: play2 task1
-      ansible.builtin.dbug:
+      ansible.builtin.debug:
       msg: "playbook2 task1"
