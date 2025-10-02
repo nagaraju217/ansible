@@ -1,5 +1,23 @@
 
 
+# - name: PLAY-01
+#   hosts: all
+#   tasks:
+#   - name: PLAY-01 and TASK-01
+#     ansible.builtin.debug:
+#       msg: "Hello from PLAY-01 and TASK-01"
+
+
+
+# - name: play2
+#   hosts: all
+#   become: yes
+#   tasks:
+#     - name: play2 task1
+#       ansible.builtin.debug:
+#       msg: "playbook2 task1"
+
+
 - name: PLAY-01
   hosts: all
   tasks:
@@ -7,12 +25,17 @@
     ansible.builtin.debug:
       msg: "Hello from PLAY-01 and TASK-01"
 
+  - name: PLAY-01 and TASK-02
+    ansible.builtin.debug:
+      msg: "Hello from PLAY-01 and TASK-02"
 
-
-- name: play2
+- name: PLAY-02
   hosts: all
-  become: yes
   tasks:
-    - name: play2 task1
-      ansible.builtin.debug:
-      msg: "playbook2 task1"
+  - name: PLAY-02 and TASK-01
+    ansible.builtin.debug:
+      msg: "Hello from PLAY-02 and TASK-01"
+
+  - name: PLAY-02 and TASK-02
+    ansible.builtin.debug:
+      msg: "Hello from PLAY-02 and TASK-02"
