@@ -1,21 +1,5 @@
-# - name: task level vars
-#   hosts: web
-#   become: yes
-#   vars:
-#     course: ansible
-#     duration: 120hrs
-#     trainer: raju
-#   tasks:
-#    - name: print variables
-#      vars:
-#       course: devops
-#      ansible.builtin.debug:
-#        msg: "course name is :{{ COURSE }}, Duration is: {{ duration }}, trainer is {{ trainer }}"
-
-
-
 - name: play level variables
-  hosts: web
+  hosts: local
   connection: local # Ansible is connecting to localhost
   vars:
     COURSE: DevOps with AWS
