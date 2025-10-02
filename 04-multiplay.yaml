@@ -1,10 +1,11 @@
-- name: play1 
-  hosts:  all
-  become: yes
+
+
+- name: PLAY-01
+  hosts: all
   tasks:
-    - name: play1 task 1
-      ansible.builtin.debug:
-      msg:  "playbook1 task1"
+  - name: PLAY-01 and TASK-01
+    ansible.builtin.debug:
+      msg: "Hello from PLAY-01 and TASK-01"
 
 
 
