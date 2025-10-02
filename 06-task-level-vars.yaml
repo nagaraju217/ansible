@@ -5,9 +5,11 @@
     course: ansible
     duration: 120hrs
     trainer: raju
-  taks:
+  tasks:
    - name: vars 
      vars:
       course: devops
      ansible.builtin.debug:
        msg: "course name is :{{ COURSE }}, Duration is: {{ duration }}, trainer is {{ trainer }}"
+
+
