@@ -1,0 +1,9 @@
+- name: file level variables
+  hosts: web
+  become: yes
+  vars:
+   - web_vars.yaml
+  tasks:
+   - name: print file variables
+     ansible.builtin.debug:
+      msg: " course name is: {{ COURSE }}, duration is: {{ DURATION }}, trainer is: {{ RAJU }}"
