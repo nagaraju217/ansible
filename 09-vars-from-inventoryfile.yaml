@@ -4,4 +4,12 @@
   tasks: 
    - name: print vars from ini file
      ansible.builtin.debug:
-      msg: "course name is:{{ COURSE }}, duration is:{{ DURATION }}, trainer is: {{ TRAINER }}"
+      msg: "course name is: {{ COURSE }}, duration is:{{ DURATION }}, trainer is: {{ TRAINER }}"
+
+# - name: variables from files
+#   hosts: local
+#   connection: local
+#   tasks:
+#   - name: print course info
+#     ansible.builtin.debug:
+#       msg: "Course Name is:{{ COURSE }}, Duratioin:{{ DURATION }}, Trainer:{{ TRAINER }}
