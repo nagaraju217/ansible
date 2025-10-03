@@ -10,5 +10,5 @@
      private: false 
   tasks:
    - name: print vars from prompt
-     ansible.builtin.demesg:
+     ansible.builtin.debug:
       msg: "username is :{{ username }}, password is {{ password }}"
