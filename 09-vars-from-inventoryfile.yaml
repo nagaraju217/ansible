@@ -1,15 +1,16 @@
-# - name: vars from inventory file
-#   hosts: web
-#   become: yes
-#   tasks: 
-#    - name: print vars from ini file
-#      ansible.builtin.debug:
-#       msg: "course name is: {{ COURSE }}, duration is:{{ DURATION }}, trainer is: {{ TRAINER }}"
-
-- name: variables from files
+- name: vars from inventory file
   hosts: web
   become: yes
-  tasks:
-  - name: print course info
-    ansible.builtin.debug:
-      msg: "Course Name is:{{ COURSE }}, Duratioin:{{ DURATION }}, Trainer:{{ TRAINER }}
+  tasks: 
+   - name: print vars from ini file
+     ansible.builtin.debug:
+      msg: " course name is: {{ COURSE }}, duration is: {{ DURATION }}, trainer is: {{ TRAINER }}"
+     
+
+# - name: variables from files
+#   hosts: web
+#   become: yes
+#   tasks:
+#   - name: print course info
+#     ansible.builtin.debug:
+#       msg: "Course Name is:{{ COURSE }}, Duratioin:{{ DURATION }}, Trainer:{{ TRAINER }}
