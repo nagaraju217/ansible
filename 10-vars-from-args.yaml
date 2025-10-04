@@ -5,3 +5,4 @@
     - name: print course details from vars
       ansible.builtin.debug:
         msg: "course nameis :{ COURSE }, trainer is:{{ TRAINER }}, TOTAL HRS IS:{{ hrs}}" 
+#ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 -e "COURSE=Ansible" -e "hrs=10HRS" -e "TRAINER=Sivakumar" 10-vars-from-args.yaml
