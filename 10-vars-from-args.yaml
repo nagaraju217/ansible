@@ -1,5 +1,5 @@
 - name: vars from args
-  hosts: local
+  hosts: web
   become: yes
   tasks:
     - name: print course details from vars
