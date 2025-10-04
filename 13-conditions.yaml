@@ -1,6 +1,6 @@
 - name: chck given nuber is lower or higher
-  hosts: web
-  become: yes
+  hosts: local
+  connection: local
   vars:
    number: 2
   tasks:
