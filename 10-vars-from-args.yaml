@@ -1,0 +1,7 @@
+- name: vars from args
+  hosts: local
+  become: yes
+  tasks:
+    - name: print course details from vars
+      ansible.builtin.debug:
+        msg: "course nameis :{ COURSE }, trainer is:{{ TRAINER }}, TOTAL HRS IS:{{ hrs}}" 

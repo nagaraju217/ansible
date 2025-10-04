@@ -1,5 +1,5 @@
 - name: ping test
-  hosts: 13.222.176.178
+  hosts: web
   become: yes
   tasks:
   - name: ping servers test
