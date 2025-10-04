@@ -2,7 +2,7 @@
   hosts: web
   become: yes
   vars:
-   number: 12
+   number: 2
   tasks:
    - name: print given number is less than 10 or not
      ansible.builtin.debug:
