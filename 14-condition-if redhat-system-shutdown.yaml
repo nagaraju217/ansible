@@ -1,0 +1,8 @@
+- name: shutdown redhat systems
+  hosts: web
+  become: yes
+  tasks:
+   - name: shut redhat systems
+     ansible.builtin.shell: /sbin/shutdown -ry 0
+     when: ansible_facts['os_family'] =="redhat"
+
