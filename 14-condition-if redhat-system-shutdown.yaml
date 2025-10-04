@@ -4,5 +4,5 @@
   tasks:
    - name: shut redhat systems
      ansible.builtin.shell: /usr/sbin/shutdown -r 0
-     when: ansible_facts['os_family'] =="RedHHat"
+     when: ansible_facts['os_family'] =="RedHat"
 
