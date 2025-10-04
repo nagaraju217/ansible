@@ -3,7 +3,7 @@
   become: yes
   tasks:
    - name: install all packages
-     ansible.builtin.packages:
+     ansible.builtin.package:
       msg: "{{ item }}"
      loop:
       - nginx
