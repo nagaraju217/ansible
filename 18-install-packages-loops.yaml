@@ -1,0 +1,11 @@
+- name: install packages by loops
+  hosts: web
+  become: yes
+  tasks:
+   - name: install all packages
+     ansible.builtin.packages:
+      msg: "{{ item }}"
+     loop:
+      - nginx
+      - mysql
+      - zip
